@@ -1,0 +1,16 @@
+Are used to create space around elements, outside of any defined borders.
+
+margin-top / right / bottom / left: px, pt, cm, em,..., %, inherit (NEGATIVE VALUES are allowed)
+    auto (to horizontally center the element within its container)
+    
+    The element will then take up the specified width, and the remaining space will be split equally
+    between the left and right margins.
+
+margin: 1 / 2 / 3 / 4 values
+
+
+
+Sometimes two margins collapse into a single margin.
+In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin
+of 20px. So, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However,
+the actual margin ends up being 50px.

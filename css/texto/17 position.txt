@@ -1,0 +1,18 @@
+position:
+    static (default, not positioned in any special way, according to the normal flow of the page)
+    relative (to its normal position. Setting top, right, bottom and left properties will cause
+        to be adjusted away. Other content will not be adjusted to fit into any gap left by the element)
+    fixed (is positioned relative to the viewport, always stays in the same place even if the page
+        is scrolled. You can use top, right, bottom and left properties)
+    absolute (removed from the normal flow and can overlap elements. Is positioned relative
+        to the nearest positioned ancestor, if hasn't, uses the document body, and moves along
+        with page scrolling. You can use top, right, bottom and left properties)
+    sticky (is positioned based on the user's scroll position, toggles between relative and fixed.
+        You can use top property)
+
+Then the elements are positioned using:
+top: auto
+bottom: auto
+left: auto
+right: auto
+(these will not work if the position (they also work depending on the value) is not set)

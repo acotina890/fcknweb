@@ -1,0 +1,35 @@
+With CSS, a color is more often specified by: a valid name (red), a hex value (#ff0000),
+an rgb value (rgb(255,52,71))
+
+
+COLORS: rgb, rgba, hex, hsl, hsla
+
+[rgb] rgb(255, 99, 71)
+red green blue x 0-255
+
+[rgba] rgba(255, 99, 71, 0.5)
+rgb alpha x 0.0-1.0
+0.0 = fully transparent
+
+[hex] #ff3447 // #bf4
+#|--|--|--| x 0...9-a...f
+The 3-digit hex code is a shorthand for some 6-digit hex codes.
+
+[hsl] hsl(9, 100%, 64%)
+hue saturation lightness
+0-360 0-100% 0-100%
+0=red, 120=green, 240=blue
+
+[hsla] hsla(9, 100%, 64%, 0.5)
+
+
+tomato, orange, dodgerblue, mediumseagreen, gray, slateblue, violet, lightgray
+
+
+
+
+
+
+background-color: a valid name
+color: hex value (6-digit)
+border: rgb value

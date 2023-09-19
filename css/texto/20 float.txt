@@ -1,0 +1,24 @@
+used for positioning and formatting content, like an image float left to the text.
+(wrap text around images)
+However, we can let elements float next to each other too.
+When we use it and we want the next element below, we use clear property.
+When clearing floats, you should match the clear.
+
+If a floated element is taller than the containing element, we can then add a clearfix hack.
+(overflow:auto) works well as long as you are able to keep control of your margins and padding.
+
+You can easily create three floating boxes side by side. However, when you add something
+that enlarges the width of each box the box will break. So box-sizing allows us to include
+the padding and border making sure that stays inside of the box and that it does not break.
+(* {box-sizing: border-box})
+However, it is not easy to create floating boxes with equal heights. Set a fixed height
+is not very flexible, so this is where CSS3 Flexbox comes in handy: it can automatically stretch
+boxes to be as long as the longest box.
+
+
+You can use it with hyperlinks to creat a horizontal menu.
+Is common to do an entire web layouts with float.
+
+
+float: left, right, none, inherit
+clear: left, right, none, inherit, both

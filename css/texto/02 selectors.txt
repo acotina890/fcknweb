@@ -1,0 +1,84 @@
+We divide them into five categories:
+SIMPLE SELECTORS (based on name, id, class):
+    Element selector: based on the name
+        h1 {}
+        p {}
+        div {}
+    Id selector:
+        #nombre {}
+    class selector: cannot start with a number
+        .nombre {}
+        p.nombre {}
+    universal selector: all elements on the page
+        * {}
+    grouping selector:
+        h1, p, div {}
+COMBINATOR SELECTORS (a combinator is something that explains the relationship between the selectors)
+    descendant selector (space):
+        div p {} <div> <p> <a> <p> </div>
+    child selector (>): direct child cuz if the child is inside on other, it won't have effect
+        div > p {} <div> <p> </div>
+    adjacent sibling selector (+): is directly after, means "immediately following"
+        div + p {} <div> </div> <p>
+    general sibling selector (~): all elements that are next siblings of the specified element.
+        div ~ p {} <div> </div> <p> <> <p> <> <p>
+PSEUDO-CLASS SELECTORS (is used to define a special state of an element)
+    a:link {}
+    tr:hover {}
+    p:first-child {}
+    q:lang(no) {} <q lang="no">
+
+:checked
+:disabled
+:empty
+:enabled
+:first-of-type
+:focus \\ puede ser usado por los inputs
+:in-range
+:invalid
+:lang
+:last-child
+:last-of-type
+:not(p)
+:nth-last-child(2)
+:nth-last-of-type(2)
+:nth-of-type(2)
+:only-of-type(2)
+:only-child
+:optional
+:out-of-range
+:read-only
+:read-write
+:required
+:root
+:target
+:valid
+PSEUDO-ELEMENTS SELECTORS (is used to style specified parts of an element)
+    p.intro::first-line {}
+
+::after
+::before
+::first-letter
+::first-line
+::marker
+::selection
+
+
+
+ATTRIBUTE SELECTORS
+    [attr] (a specified attribute)
+        a[target] {}
+        [title] {}
+    [attr="v"] (a specified attribute with a specified value)
+        a[target="_blank"]
+    [attr~="v"] (a specified attribute with a specified value containing space-separated list of words)
+        [title~="flower"] {}
+    [attr|="v"] (a specified attribute with a specified value followed or not by a hyphen '-')
+        [class|="top"] {}
+    [attr^="v"] (a specified attribute starting with a specified value)
+        [class^="top"] {}
+    [attr$="v"] (a specified attribute ending with a specified value)
+        [class$="test"] {}
+    [attr*="v"] (a specified attribute that contains (part of) the specified value)
+        [class*="te"] {}
+    

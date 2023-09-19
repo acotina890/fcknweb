@@ -1,0 +1,13 @@
+Is a line drawn outside the element's border, around elements, OUTSIDE the borders,
+to make the element "stand out".
+
+outline-style: required
+    dotted dashed solid double groove ridge inset outset none hidden
+outline-width: px, pt, cm, em,...,thin(1px), medium(3px), thick(5px)
+outline-color: name, hex, rgb, hsl, invert (ensures that the outline is visible, regardless
+    of color background)
+outline-offset: adds space (transparent) between an outline and the edge/border
+    px, pt, cm, em,...
+
+
+outline: width style (required) color

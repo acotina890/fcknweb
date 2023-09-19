@@ -1,0 +1,3 @@
+To horizontally center a block element, use margin:auto, but always specifying the width (or it will
+not have effect)
+To center an image, make it into a block element (display:block) and set left right margin to auto.

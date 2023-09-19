@@ -1,0 +1,25 @@
+This property is the most important for controlling layout.
+
+Every HTML element has a default display value. The <script> uses none (commonly used with
+JavaScript to hide and show elements without deleting and recreating)
+
+Override the default value
+Changing an inline element to a block element, or vice versa, can be useful for making the
+page look a specific way. (li {display:inline}, an inline element with display:block
+is not allowed to have other block elements inside it.)
+
+display:none or visibility:hidden?
+Hiding an element can be done by display:none and the page will be displayed as if the element
+is not there. With visibility:hidden happens the same but the element will still take up the
+same space as before, still affect the layout.
+
+
+display: block, inline, inline-block
+
+
+
+
+
+display:inline-block allows to set a width and height on the element.
+the top and bottom margins/paddings are respected (not display:inline)
+does not add a line-break after the element, so the element can sit next to other elements.

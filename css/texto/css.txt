@@ -1,0 +1,201 @@
+background: #f3b url("xqgif.gif") no-repeat right top
+    -
+        color:
+        image: url("archivo.gif")   .png, .jpg, .jpeg, .mp4, mp3, etc
+        repeat: repeat, repeat-x (horizontal), repeat-y (vertical), no-repeat
+        attachment: fixed, scroll
+        position: center, right top, 0-100%, 0-...px (par)
+
+        clip:
+        origin:
+        size:
+border: 5px solid red
+    -
+        [left / top / right / bottom]
+            [-]
+                color: blue, (tb rl); (t rl b); aqua yellow violet tomato (t r b l)
+                radius: 5px
+                style: dotted solid (tb rl); dotted solid double (t rl b); (t r l b)
+                width: 5px; 5px (tb) 20px (rl); (t rl b); 25px (t) 10px (r) 4px (b) 35px (l)
+box
+    -
+        sizing: border-box;
+        shadow: px px px px rgba
+clear: none, left, right, both, inherit;
+content: ""; url() ??????
+cursor: auto = text; crosshair; default; help; move; pointer; progress = wait;
+    e-resize == w-resize; s-resize == n-resize; ne-resize == sw-resize;
+    nw-resize == se-resize;
+direction: rtl; *
+display: inline, block, inline-block; flex
+float: left, right, none, inherit;
+font: 20px Arial, sans-serif; italic small-caps bold 12px/30px georgia, serif;
+    -
+        family: Lucida Console, Courier New, monospace; Arial, Helvetica, sans-serif;
+        size: 40px, 1.875em, 
+        style: normal, italic, oblique;
+        variant: normal, small-caps;
+        weight: normal, bold;
+height: 150px;
+letter-spacing: -2px, 5px; *
+line-height: 0.8, 1.8; *
+list-style: square inside url()
+    -
+        image: url('xqgif.gif') ????
+        position: outside; inside;
+        type: none;
+margin: 2px; auto, inherit; (t r b l)
+    -
+        top / right / bottom / left
+max/min-width/height: 50px;
+opacity: 0.0-1.0;
+outline: thin ridge pink
+    -
+        style: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden
+        color: nombre, hex, rgb, hsl, invert
+        width: thin (1px), medium (3px), thick (5px), (px, pt, cm, em,...; %)
+        offset: 15px
+overflow: visible, hidden, scroll, auto;
+    -
+        x / y: auto; ??????
+        wrap: ????
+padding: 5px; inherit; (t r b l)
+    -
+        top / right / bottom / left
+position: static, relative, fixed, absolute, sticky;
+quotes: "~" "~";
+top / bottom / right / left: 30px;
+text
+    -
+        align: center / left / right / justify
+            -last: "
+        decoration:
+            -
+                line: overline; line-through; underline; overline underline;
+                color: red
+                style: solid, double, dotted, dashed, wavy
+                thickness: auto; 5px, 25%
+        indent: 50px;
+        shadow: 2px 2px 5px red, 0 0 5px blue;
+        transform: uppercase, lowercase, capitalize;
+transform: translate(-50%, -50%) ?????
+unicode-bidi: bidi-override; *
+vertical-align: baseline; text-top / bottom; sub / super; *
+white-space: nowrap; *
+width: 200px;
+word-spacing: 10px; *
+z-index: 
+
+* texto
+(((((((((((((((((((((((((((((((((((((((((((())))))))))))))))))))))))))))))))))))))))))))
+
+height, width: auto, (px, pt, cm, em,...; %), initial (valor por defecto), inherit
+max-width: establece el ancho máximo de un elemento, (px, pt, cm, em,...; %), none (por defecto)
+    usarlo improvisa que los navegadores manejen ventanas pequeñas, importante para un sitio
+    en dispositivos pequeños
+top / bottom / right / left: no funcionan si no se especifica primero position (relative)
+align-items: center; ??????
+background: color imagen repeat attachment position
+background-color: caja
+background-repeat: si la imagen se repite, de qué manera o no
+background-attachment: si la imagen va a la par de la barra o no
+background-clip: 
+background-origin: 
+background-size: 
+border: width style (requerido) color [aplicado a cualquier propiedad]
+border-left/top/right/bottom: para un lateral especifico
+border-radius: redondeo de bordes, px
+border-color: nombre, rgb, hex
+    1 valor = todos los bordes (blue)
+    2 valores = top-bottom, right-left (pink lightblue)
+    3 valores = top, right-left, bottom (orange gold purple)
+    4 valores = top, right, bottom, left (aquamarine crimson darkgreen turquese)
+border-style: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden
+    1 valor = todos los bordes (dotted)
+    2 valores = top-bottom, right-left (dotted solid)
+    3 valores = top, right-left, bottom (dashed groove inset)
+    4 valores = top, right, bottom, left (solid double ridge outset)
+border-width: px, medium, thick
+    1 valor = todos los bordes (5px)
+    2 valores = top-bottom, right-left (5px 15px)
+    3 valores = top, right-left, bottom (10px 2px 6px)
+    4 valores = top, right, bottom, left (3px 5px 6px 10px)
+border-spacing: especifica la distancia entre los bordes y las celdas adyacentes
+box-sizing: evitar que la caja se rompa
+caption-side: especifica el lugar de la tabla caption.
+clear: (al usar float) si queremos un elemento debajo, no en los laterales
+    float:left  clear:left
+    si un elemento es más grande que el contenedor, se resuelve con overflow:auto
+    sin embargo, es mucho más seguro el nuevo método de implementación:
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+color: texto, la letra
+direction, unicode-bidi: la direccion de un texto
+display: es la propiedad más importante para controlar el layout.
+    especifica como un elemento se visualiza. Todo elemento html tiene un valor por defecto, que para
+    la mayoría es block o inline. li {inline} para menus horizontales
+    display:none (la pagina se visualiza como si el elemento no estuviera)
+    visibility:hidden (lo esconde pero toma el mismo espacio, afectando el layout)
+empty-cells: especifica si visualizar o no bordes y fondo en celdas vacías.
+float: to wrap text around images.
+font: sytle variant weight size/line-height (requerido) family (requerido)
+    si alguno de los 2 (requerido) no se especifica, se usa el valor por defecto
+font-family: debería contener nombres como un sistema de reserva para asegurar la máxima
+    compatibilidad entre los navegadores y sistemas operativos. Comienza con la letra que vos quieras
+    y termina con una familia genérica.
+font-size: muchos desarrolladores usan em para que los usuarios reajusten el texto.
+    1em = 16px      40/16=2.5
+    la solucion que funciona en todos los navegadores es establecer por defecto un porcentaje en
+    el body elemento: body {font-size: 100%;} y los demás en la unidad de medida que vos quieras.
+    para que el texto siga el tamaño de la ventana, puede ser establecido con una unidad vw:
+    viewport width. h1 {font-size: 10vw;}
+font-style: para especificar la letra inclinada. (oblique es menos soportada)
+font-variant: para especificar si se visualiza en pequeñas mayusculas.
+font-weight: para especificar la letra negrita.
+list-style: type position image
+    si alguna de las propiedades no se encuentra, se visualiza el valor por defecto
+margin: espacio entre elementos, valores negativos están permitidos (px, pt, cm, em,...; %)
+    auto = centro de la caja, inherit = heredar
+    collapse: a veces, 2 márgenes colapsan en uno solo (solo sucede en top bottom)
+    h1 {} h2 {}
+opacity: transparencia
+outline: línea fuera de la caja y puede solapar con otro contenido; el ancho de un elemento
+    no es afectado por el ancho de la línea afuera
+outline-color: invert, invierte el color que asegura que la línea sea visible, sin importar
+    el color de fondo
+outline-offset: añade espacio entre la línea fuera y el borde de la caja
+overflow: controla que pasa con el contenido que es muy grande para caber en un area
+overflow-wrap: especifica si el navegador puede quebrar lineas con palabras largas o no
+padding: espacio entre el texto y el borde del elemento, valores negativos no están permitidos
+    (px, pt, cm,...; %)
+position: posicionar texto en una imagen tmb.
+    static (es siempre posicionado de acuerdo al flow normal de la pagina) valor por defecto
+    sticky (se mueve de acuerdo a la barra lateral)
+table-layout: establece el algoritmo layout para que se use en la tabla ????
+text-align-last: como alinear la ultima línea del texto
+text-decoration: line (requerido) color style thickness
+text-indent * letter-spacing, line-height, word-spacing, white-space: texto
+vertical-align: la alineacion vertical de un elemento, mas bien del contenido
+z-index: especifica el orden de agrupamiento de un elemento (si adelante, atras/de todo, etc)
+    cuando los elementos estan posicionados pueden solapar otros.
+
+
+
+
+
+
+
+
+
+(al usar opacity sucede que los elementos hijos del elemento en que se aplicó el estilo,
+se aplicará más transparencia y se volverá difícil de leer. Por lo que una buena práctica, y para
+evitar esto, sería utilizar background: rgba(); en vez de opacity)
+
+
+
+
+
+la lista tiene margen y padding por defecto, para removerlo se usa margin / padding:0

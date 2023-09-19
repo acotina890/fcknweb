@@ -1,0 +1,24 @@
+background-color: you can set it for any HTML element.
+    name, 6-digit hex, rgb (rgba for transparency)
+
+background-image: by default, the image is repeated so it covers the entire element.
+    url()
+background-repeat: repeats an img both horizontally and vertically
+    no-repeat, repeat-x, repeat-y
+background-position: of an img
+background-attachment: specifies whether the img should scroll or be fixed
+    fixed, scroll,
+
+
+
+background: color image repeat position (shorthand)
+
+
+
+
+
+
+
+background-clip: ????
+background-origin: ????
+background-size (img): palabra (cover, contain, auto), % %

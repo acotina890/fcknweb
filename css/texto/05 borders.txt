@@ -1,0 +1,31 @@
+border-style: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden
+    border-top-style
+    border-right-style
+    border-bottom-style
+    border-left-style
+border-width: px, pt, cm, em,..., thin, medium, thick
+    border-top-width
+    border-right-width
+    border-bottom-width
+    border-left-width
+border-color: 1 value / 4 values (top right bottom left)
+    border-top-color
+    border-right-color
+    border-bottom-color
+    border-left-color
+1 value = all borders
+2 values = top-bottom sides
+3 value = top right-left bottom
+4 values = top right bottom left
+
+
+border-radius: px
+border-spacing: px
+
+
+
+border: width style (required) color
+border-left: "
+border-right: "
+border-top: "
+border-bottom: "

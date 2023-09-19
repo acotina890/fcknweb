@@ -1,0 +1,440 @@
+.selectors {
+    p {
+        display: none;
+        background-color: yellow;
+        padding: 20px;
+    }
+
+    div:hover p {
+        display: block;
+    }
+
+    p:first-child {
+        color:blue
+    }
+
+    q:lang(no) {
+        quotes: "~" "~"
+    }
+
+    ::marker {
+        color: red;
+        font-size: 23px;
+    }
+
+    ::selection {
+        color: red;
+        background: yellow;
+    }
+}
+
+
+.color {
+    background-color: tomato
+    color: lightgreen
+    border: 2px solid red
+}
+
+
+.fondo {
+    background-color: rgba(0, 128, 0, 0.3) // para evitar la transparencia en el texto
+
+    background-image: url("paper.gif")
+    background-repeat: no-repeat
+    background-position: right top
+    background-attachment: fixed
+
+    background: #ffffff url("img.jpeg") no-repeat right top
+}
+
+
+.borde {
+    border-style: dotted
+    border-width: 20px 5px
+
+    border-top-color: red
+    border-right-color: blue
+    border-left-color: yellow
+    border-bottom-style: double
+
+    border: 2px dotted black
+    border-left: 4px double blue
+
+    border-radius: 5px
+}
+
+
+.margen {
+    margin-top: 5px
+    margin-left: -1px
+
+    margin: 3px 6px 2px
+
+    margin: 0 0 50px 0;
+    margin: 20px 0 0 0;
+}
+
+
+.padding {
+    padding-left: 1px
+    padding: 2px 20px 3px
+
+    width: 200px
+    padding: 25px
+    (200 + 25 + 25 = 250)
+    box-sizing: border-box (para evitar sumar)
+}
+
+
+.heightWidth {
+    height: 200px
+    width: 50%
+
+    max-width:500px
+    height:100px
+
+    min-height: 100px
+    width: 100%
+}
+
+
+.boxmodel {
+    width: 300px
+    border: 15px solid green
+    padding: 50px
+    margin: 20px
+}
+
+
+.outline {
+    outline-style: dashed
+    outline-width: 3px
+    outline-color: purple
+
+    outline: 3px dashed purple
+
+    outline-offset: 15px
+}
+
+
+.text {
+    color: pink
+    text-align: justify
+    text-align-last: right
+    vertical-align: sub
+    text-decoration-line: overline underline
+    text-decoration-color: red
+    text-decoration-style: wavy
+    text-decoration-thickness: auto
+    text-transform: capitalize
+
+    text-indent: 20px
+    letter-spacing: -1px
+    line-height: 1.8
+    word-spacing: -1px
+    white-space: nowrap
+
+    text-shadow: 2px 2px 5px lightgreen, 0 0 4px #ff3447
+
+    text-decoration: line-through lightblue wavy 2px
+}
+
+
+.font {
+    font-family: "Times New Roman", Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: Tahoma, Verdana, sans-serif;
+
+    font-style: oblique
+    font-weight: bold
+    font-variant: small-caps
+
+    body {
+        font-size: 100%
+    }
+
+    font-size: 14px
+    font-size: 2.5em
+    font-size: 10vw
+
+    font: 20px Arial, sans-serif;
+    font: italic small-caps bold 12px/30px Georgia, serif;
+}
+
+
+.links {
+    a {
+        color: purple
+    }
+}
+
+
+.list {
+    ul {
+        list-style-type: square
+    }
+
+    ol {
+        list-style-type: upper-roman
+    }
+
+    dl {
+        list-style-image: url("square.gif")
+    }
+
+    .remove default settings {
+        list-style-type: none
+        margin:0
+        padding:0
+    }
+
+    list-style: square inside url("circle.gif")
+}
+
+
+
+.table {
+    div {
+        overflow-x: auto
+    }
+
+
+    table, th, td {
+        border: 1px solid
+    }
+
+    table {
+        width: 100%
+        border: 1px solid (if you want a border only)
+    }
+
+    .remove double border {
+        border-collapse: collapse
+    }
+
+    th {
+        height: 70px
+        text-align: left
+        vertical-align: bottom
+
+        background-color: lightgreen
+        color: white
+    }
+
+    th, td {
+        padding: 15px
+        border-bottom: 1px solid #ddd
+    }
+
+    tr:hover {
+        background-color: coral
+    }
+
+    tr:nth-child(even) {
+        background-color: #f3f3f3
+    }
+}
+
+
+
+.display {
+    span {
+        display: block
+    }
+
+    img {
+        display:none (not affecting the layout)
+    }
+
+    .horizontal nav links {
+        .nav {
+            background-color: yellow; 
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;
+        }
+    }
+}
+
+
+
+.position {
+    div.static {
+        position: static;
+        border: 3px solid #73AD21;
+    }
+
+    div.relative {
+        position: relative;
+        left: 30px;
+        border: 3px solid #73AD21;
+
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73AD21;
+
+        div.absolute {}
+    }
+
+    div.fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        border: 3px solid #73AD21;
+    }
+
+    div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73AD21;
+    }
+
+    div.sticky {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        background-color: green;
+        border: 2px solid #4CAF50;
+    }
+
+    .texto en imagen {
+        div {
+            position: absolute
+            top / left / right / bottom
+            font-size: 15px
+        }
+    }
+}
+
+
+
+.z-index {
+    img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+    }
+
+    div1 {
+        position:relative
+        z-index: 1
+    }
+
+    div2 {
+        position:absolute
+        z-index: 2
+    }
+}
+
+
+
+.overflow {
+    overflow: auto (content not element)
+
+    overflow-x: hidden (hide the horizontal scroll bar)
+    overflow-y: scroll (add vertical scroll bar)
+}
+
+
+
+.float {
+    float:left
+    clear:left
+
+    .clearfix hack {
+        overflow:auto
+    }
+
+    .modern clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .flexible boxes {
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: DodgerBlue;
+        }
+
+        .flex-container .box {
+            background-color: #f1f1f1;
+            width: 50%;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    }
+
+    .horizontal menu {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: red;
+        }
+    }
+}
+
+
+
+.align {
+    none
+}
+
+
+
+
+
+
+
+.otros {
+    img {
+        opacity: 0.5;
+    }
+
+    img:hover {
+        opacity: 1.0;
+    }
+
+
+    opacity: 0.5
+    cursor: crosshair
+}

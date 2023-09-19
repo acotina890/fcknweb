@@ -1,0 +1,12 @@
+Is used when talking about design and layout.
+is essentially a box that wraps around every HTML element. It consists of: margins, borders,
+padding, and the actual content.
+
+
+To calculate the full size of an element, you must also add padding, borders and margins.
+
+Total element width = width + left padding + right padding + left border + right border +
+left margin + right margin
+
+Total element height = height + top padding + bottom padding + top border + bottom border +
+top margin + bottom margin

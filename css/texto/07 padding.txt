@@ -1,0 +1,8 @@
+Used to create space around an element's content
+If an element has a specified width, the padding will be added to the total width.
+To keep the width, no matter the amount of padding, you can use box-sizing to maintain its
+actual width. If you increase the padding, the available content space will decrease.
+
+padding-top / right / bottom / left: px, pt, cm, em,..., %, inherit
+
+padding: 1 / 2 / 3 / 4 values

@@ -1,0 +1,14 @@
+both the table and the cells have separate borders.
+
+A responsive table will display a horizontal scroll bar if the screen is too small
+to display the full content. In the container element declare: div {overflow-x:auto}
+
+:hover {}
+:nth-child(even / odd) {}
+div {overflow:auto}
+vertical-align: bottom
+border-collapse: collapse
+border-spacing: px
+caption-side: ???
+empty-cells: ???
+table-layout: ???

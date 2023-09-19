@@ -1,0 +1,7 @@
+A CSS rule consists of a selector and a declaration block.
+
+h1 {}
+
+The selector points to the HTML element you want to style.
+The declarations are separated by semicolons and surrounded by curly braces.
+Property name and value are separated by a colon.

@@ -1,0 +1,96 @@
+<head>
+    <link rel="stylesheet" href="styles.css"> (external, for many pages)
+    //
+    <style> (internal, for a single page)
+        // codigo css
+    </styl>
+<head>
+
+<h1 class="nombre1 nombre2"> (aplicar varias clases a la vez)
+
+<p style=""> (inline, apply to a single element)
+
+ORDEN DE APLICACIÓN DE ESTILOS: inline > external e internal > navegador
+--------------------------------------------------------------------------------------------------
+opacity: 0.0 - 1.0 (the lower value, the more transparent)
+    specifies the opacity/transparency of an element. 
+    all of its child elements inherit the same transparency, this can make the text inside hard
+    to read. If you do not want to apply opacity to child elements use RGBA values.
+    (background-color)
+
+
+cursor: auto = text; crosshair; default; help; move; pointer; progress = wait;
+    e-resize == w-resize; s-resize == n-resize; ne-resize == sw-resize;
+    nw-resize == se-resize;
+
+transform: ?????
+transition: width 0.4s ease-in-out;
+:focus {width:100%}
+--------------------------------------------------------------------------------------------------
+SHORTHANDS
+background: #ff0000 url("image.gif") no-repeat right top;
+    background: color image repeat position
+
+border: inset;
+outline: outset;
+
+border: 2px solid tomato;
+border-top: thin dotted dodgerblue;
+outline: 5px double dodgerblue;
+    width style color
+
+border-style: dashed dotted;
+border-width: 5px 20px
+border-color: red blue
+margin: 1px 4px
+padding: 5px 15px
+outline: ridge hotpink;
+    top-bottom sides
+
+border-style: dashed dotted ridge;
+border-width: thin medium thick;
+border-color: red blue green;
+margin: 1px 4px 15px
+padding: 5px 15px 25px
+    top sides bottom
+
+border-style: dashed dotted ridge double;
+border-width: 25px 10px 4px 6px;
+border-color: red green blue yellow;
+margin: 1px 4px 15px 40px
+padding: 5px 15px 25px 45px
+    top right bottom left
+
+border-radius: 1px 3px
+    top-left.bottom-right top-right.bottom-left
+border-radius: 1px 3px 5px
+    top-left top-right.bottom-left bottom-right
+border-radius: 1px 3px 5px 7px
+    top-left top-right bottom-right bottom-left
+
+
+text-decoration: overline underline darkblue wavy 1px;
+    text-decoration: line color style thickness
+text-shadow: 2px 2px 5px red;
+    horizontal vertical blur color
+
+
+font: 20px Times New Roman, times, serif;
+    font: size family
+font: italic small-caps bolder 20px/25px Times New Roman, times, serif;
+    style variant weight size/line-height family
+--------------------------------------------------------------------------------------------------
+[* {box-sizing: border-box}]
+[margin:auto (width)]
+[padding & width = box-sizing]
+[max-width]
+[body {(font-size, width):100%}; ... font-size: 1.25em;
+font-size: vw -> keep same size]
+[display:none -> hide without taking space
+visibility:hidden -> hide taking the same space]
+[modern clearfix
+content:"";
+clear:both;
+display:table;]
+[a {display:block} -> makes the whole link an area clickable (and it allows to specify the width,
+padding, margin, heigh, etc)]

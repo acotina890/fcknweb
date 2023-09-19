@@ -1,0 +1,4 @@
+Controls what happens to content that is too big to fit into an area.
+
+overflow(-x / y): visible, hidden, scroll, auto
+overflow-wrap: whether the browser can break lines with long words.

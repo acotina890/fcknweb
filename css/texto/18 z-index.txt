@@ -1,0 +1,4 @@
+Specifies the stack order of an element, which element should be placed in front of, or behind,
+the others. When elements are positioned, they can overlap other elements.
+
+z-index: numero (negativos se permiten)

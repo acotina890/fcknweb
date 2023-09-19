@@ -1,0 +1,56 @@
+CSS is the language we use to style an HTML document, describes how elements should be displayed.
+It can control the layout of multiple web pages at once.
+
+
+
+SELECTOR SIMPLE: elemento html
+    h1 {}
+SELECTOR ID:
+    #valorId {}
+SELECTOR CLASE:
+    .estilo1 {}
+    p.estilo2 {}
+    (<p class="estilo1 estilo2"> para aplicar estilos de varias clases a la vez)
+SELECTOR UNIVERSAL: todos los elementos html
+    * {}
+SELECTOR GRUPAL:
+    h1, a, p {}
+SELECTOR COMBINADOR: relación entre elementos html
+    selector descendiente (espacio): todos los elementos dentro del mismo
+        div p {}
+    selector hijo (>): si el elemento hijo se encuentra dentro de otro, no se aplica
+        div > p {}
+    selector hermano adyacente (+): inmediatamente despues de otro elemento
+        div + p {}
+    selector hermano gral (~): todos los elementos que le siguen despues (exceptuando
+    estar dentro de otro)
+        div ~ p {}
+SELECTOR PSEUDO-CLASE: clases que funcionan indicando solo el elemento html
+    a:hover {}
+SELECTOR PSEUDO-ELEMENTO: aplica estilos a una parte del elemento
+SELECTOR DE ATRIBUTOS: sea el mismo o el valor de este
+
+
+
+georgia-verdana
+Helvetica-garamond
+merriweather-open sans
+ubuntu-lora
+spectral-rubik
+
+
+
+LAYOUT ------------------------------------------------------------------------------------------
+Websites often display content in multiple columns.
+There are four different techniques to create multicolumn layouts:
+• CSS Framework (w3.css, bootstrap)
+• CSS Float property (floating elements are tied to the document flow, which may harm the flexibility)
+• CSS flexbox (ensures that elements behave predictably when the page must accommodate different
+screen sizes and devices)
+• CSS grid (like a table, making it easier to design without float and position)
+
+
+
+
+You can easily create three floating boxes side by side. However, when you add something that
+enlarges the width of each, the box will break. (box-sizing)

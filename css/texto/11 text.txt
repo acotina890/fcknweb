@@ -1,0 +1,40 @@
+High contrast is very important for people with vision problems. (background-color with color)
+
+color: name, hex, rgb
+text-align: to set the horizontal alignment of a text.
+    left, right, center, justify
+text-align-last: align the last line of a text.
+
+vertical-align: baseline, text-top / bottom, sub, super
+
+text-decoration-line: you can combine more than one value.  It is not recommended to underline
+    text that is not a link.
+    
+    overline, line-through, underline, none
+text-decoration-color: name, hex, rgb
+text-decoration-style: solid, double, dotted, dashed, wavy
+text-decoration-thickness: px, pt, cm, em,..., auto
+
+text-transform: uppercase, lowercase, capitalize
+
+text-indent: px, pt, cm, em,...
+letter-spacing: px, pt, cm, em,... (negative are allowed)
+line-height: 0.0-2.0 ? (space between lines)
+word-spacing: px, pt, cm, em,... (negative are allowed)
+white-space: increases or decreases the white space between words. (negative are allowed)
+    px, pt, cm, em,..., normal (0.25em), initial, inherit, nowrap 
+
+text-shadow: you only specify the horizontal and vertical
+    px, pt, cm, em,..., blur, color
+
+
+
+text-decoration: line color style thickness
+
+
+
+
+
+(como <bdo>)
+direction: rtl
+unicode-bidi: bidi-override

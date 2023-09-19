@@ -1,0 +1,6 @@
+list-style-type: circle, square, upper-roman, lower-alpha
+list-style-image: url("")
+list-style-position: outside, inside
+
+list-style: type position image
+    if style-image is specified and cannot be displayed, the value will be displayed instead

@@ -1,0 +1,29 @@
+Do not include padding, borders, or margins. It sets the height/width of the area inside
+the padding, border, and margin of the element.
+The properties set the content area.
+
+height / width: auto, px, pt, cm, em,..., %, initial, inherit
+
+
+
+The max set the maximum width / height of an element.
+When the element is smaller than the width, the browser adds a horizontal scrollbar.
+Using this property will improve the browser's handling of small windows.
+(if you declare "same" property with max and the value is larger, width > max-width,
+the max property will be used and the other ignored)
+
+max-width / height: px, pt, cm, em,..., %, none (default)
+
+
+same happens with min.
+
+
+
+
+
+Using width, max-width and margin:auto
+Setting the width of a block element will prevent from stretching out to the edges of its container.
+Then, you can set the margins to auto, to horizontally center the element within its container.
+The element will take up the specified width, and the remaining space will be split equally
+between the two margins.
+Using max-width instead will improve the browser's handling of small windows.
