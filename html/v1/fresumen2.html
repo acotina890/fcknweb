@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width:device-width, initial-scale:1.0"/>
+        <title> ANOTHER ONE </title>
+        <link rel="icon" type="x-icon/image" href="icono.ico">
+        <style>
+            .encabezado {
+                font-size: 60px;
+                background-color: violet;
+                padding: 10px;
+            }
+
+            .background {
+                background-color: aquamarine;
+            }
+
+            .cajas {
+                border: 2px solid aquamarine;
+                width: 1800px;
+                height: 100px;
+            }
+
+            .celda {
+                float: left;
+                width: 225px;
+                height: 160px;
+                /* border: 2px solid white; */
+            }
+            
+            .flotador {
+                float: right;
+            }
+            
+            .margenizq {
+                float: left;
+                width: 225px;
+                /* border: 2px solid white; */
+                padding-left: 30px;
+            }
+            
+            .flotante {
+                float: left;
+                width: 370px;
+                height: 220px;
+                padding-left: 50px;
+                /* border: 2px solid white; */
+            }
+        </style>
+    </head>
+
+    <body class="background">
+        <div id="Principal">
+            <header>
+                <h1 class="encabezado">
+                    FORMULARIOS
+                </h1>
+            </header>
+            <table class="cajas">
+                <tr>
+                    <td class="celda">
+                        <form action=""> What is an &apos;action&apos; <br>
+                            <input type="text" value="Inmodificable" readonly
+                            disabled> text <br>
+                            <input type="radio"> radio <br>
+                            <input type="checkbox"> checkbox <br>
+                            <input type="submit"> submit <br> <br>
+                            <input type="button" value="Click me">
+                        </form>
+                    </td>
+
+                    <td class="celda">
+                        <form action="">
+                            <label for="lblNombre"> Nombre: </label> <br>
+                            <input type="text" id="lblNombre" name="Nombre" value="N"> <br>
+                            <label for="lblApellido"> Apellido: </label> <br>
+                            <input type="text" id="lblApellido" name="Apellido" value="A">
+                            <br> <br>
+                            <input type="hidden" id="hid" name="Hidden" value="2456">
+                            <input type="submit" value="Submit">
+                            <input type="reset">
+                        </form>
+                    </td>
+
+                    <td class="celda"> Elija m&eacute;todo de pago: <br>
+                        <form action="">
+                            <input type="radio" id="credito" name="tjta_cred" value="cred">
+                            <label for="credito"> Tarjeta de cr&eacute;dito </label> <br>
+                            <input type="radio" id="debito" name="tjta_deb" value="deb">
+                            <label for="debito"> Tarjeta de d&eacute;bito </label> <br>
+                            <input type="radio" id="efectivo" name="chash" value="guita">
+                            <label for="efectivo"> Efectivo </label>
+                        </form>
+                    </td>
+                    
+                    <td class="celda">
+                        Elija productos a llevar: <br>
+                        <form action="">
+                            <input type="checkbox" id="mouse" name="raton" value="rat">
+                            <label for="mouse"> Mouse </label> <br>
+                            <input type="checkbox" id="kbd" name="teclado" value="tec">
+                            <label for="kbd"> Teclado </label> <br>
+                            <input type="checkbox" id="screen" name="monitor" value="mon">
+                            <label for="screen"> Monitor </label>
+                        </form>
+                    </td>
+                    
+                    <td class="celda">
+                        <form action="">
+                            <fieldset>
+                                <legend> Elija un auto: </legend>
+                                <!-- <label for="autos"> Elija un auto: </label> <br> -->
+                                <select name="cars" id="autos"> <!-- size="3" / multiple -->
+                                    <option value="mazda"> Mazda </option>
+                                    <option value="hrv"> HRV </option>
+                                    <option value="civic"> Civic </option>
+                                    <option value="camaro"> Camaro </option>
+                                </select>
+                                <textarea name="sms" id="cuadro" cols="20" rows="3">Let's see
+                                </textarea>
+                                <button type="button" class="flotador"> Clikeame </button>
+                            </fieldset>
+                        </form>
+                    </td>
+
+                    <td class="margenizq">
+                        Ingrese lenguaje deseado: <br>
+                        <form action="">
+                            <input list="lenguajes">
+                            <datalist id="lenguajes">
+                                <option value="HTML">
+                                <option value="CSS">
+                                <option value="Javascript">
+                                <option value="Python">
+                                <option value="Java">
+                            </datalist>
+                            <br> <br>
+                            <label for="fav"> Elija color favorito: </label> <br>
+                            <input type="color" id="fav" name="Favcolor">
+                        </form>
+                    </td>
+
+                    <td class="celda">
+                        <input type="image" src="imgminitwitch.jpg" width="48"
+                        height="48" class="flotador" draggable="true">
+                        <label for="birth"> Cumplean&#771;os: </label> <br>
+                        <input type="month" id="birth" name="Cumple">
+                        <!-- date max/min="año-mes-dia" / datetime-local / week -->
+                        <br> <br>
+                        <label for="email"> Ingrese su mail: </label> <br>
+                        <input type="email" id="email" name="Email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="celda">
+                        <form action="">
+                            <label for="user"> Usuario: </label> <br>
+                            <input type="text" id="user" name="Usuario"> <br>
+                            <label for="pass"> Contrasen&#771;a: </label> <br>
+                            <input type="password" id="pass" name="Contraseña"> <br> <br>
+                            <input type="submit">
+                        </form>
+                    </td>
+
+                    <td class="celda">
+                        <form action="">
+                            <label for="n"> Ingrese numero: </label> <br>
+                            <input type="number" id="n" name="Num"> <!-- min, max -->
+                            <br> <br>
+                            <label for="rango"> Barra: </label> <br>
+                            <input type="range" id="rango" name="Rango">
+                        </form>
+                    </td>
+                    
+                    <td class="celda">
+                        <form action="">
+                            <label for="tel"> Tel&eacute;fono: </label>
+                            <input type="tel" id="tel" name="Tel">
+                            <!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" -->
+                            <br> <br>
+                            <label for="hora"> Time: </label>
+                            <input type="time" id="hora" name="Hora">
+                            <br> <br>
+                            <label for="url"> Link: </label>
+                            <input type="url" id="url" name="Url" size="15">
+                        </form>
+                    </td>
+                    
+                    <td class="celda">
+                        <label for="arch"> Importar: </label>
+                        <input type="file" id="arch" name="Archivo">
+                        <br> <br>
+                        <label for="busc"> Barra de buscador: </label>
+                        <input type="search" id="busc" name="Gsearch">
+                    </td>
+
+                    <td class="flotante">
+                        <audio controls>
+                            <source src="audlight_of_the_seven.mp3" type="audio/mpeg">
+                            Audio.
+                        </audio>
+                    </td>
+
+                    <td class="flotante">
+                        <video width="320" height="240" controls autoplay muted>
+                            <source src="viddestiny2.mp4" type="video/mp4">
+                            El navegador no soporta este tipo de formato de video.
+                        </video>
+                    </td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <iframe width="420" height="315"
+                src="https://www.youtube.com/embed/
+                playlist?list=PLMDfgZd0kRKouTVDS54T07R4X6SQ2c7sK&si=ZBdznnKPjiqvxNwe">
+            </iframe>
+        </div>
+    </body>
+</html>
