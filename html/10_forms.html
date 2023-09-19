@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> FORMS </title>
+    </head>
+
+    <body>
+        <p>
+            <h1> FORMULARIOS </h1>
+            <hr>
+            <form action=""> <!-- target, method, autocomplete, novalidate -->
+                <fieldset>
+                    <legend> ENTRADA DE TEXTO </legend>
+
+                    <label for="txt"> TEXT: </label>
+                    <input type="text" name="entry" id="txt" size="27" autofocus>
+                    <br> <br>
+
+                    <label for="pwd"> PASSWORD: </label> <!-- required -->
+                    <input type="password" id="pwd" name="contra" size="22"> <br> <br>
+
+                    <label for=""> DATALIST: </label>
+                    <input list="naveg" value="Safari">
+                    <datalist id="naveg">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                    </datalist> <br> <br>
+
+                    <label for=""> DATE: </label>
+                    <input type="date"> <!-- min, max -->
+                    <br> <br>
+
+                    <label for=""> DATETIME-LOCAL: </label>
+                    <input type="datetime-local"> <br> <br>
+
+                    <label for=""> MONTH: </label>
+                    <input type="month"> <br> <br>
+
+                    <label for=""> WEEK: </label>
+                    <input type="week"> <br> <br>
+
+                    <label for=""> TIME: </label>
+                    <input type="time"> <br> <br>
+
+                    <label for=""> EMAIL: </label>
+                    <input type="email" size="23" readonly> <br> <br>
+
+                    <label for=""> TEL: </label>
+                    <input type="tel" size="26"> <!-- pattern, placeholder -->
+                    <br> <br>
+
+                    <label for=""> NUMBER: </label>
+                    <input type="number"> <!-- min, max, step, maxlength -->
+                    <br> <br>
+
+                    <label for=""> SEARCH: </label>
+                    <input type="search" size="21"> <br> <br>
+
+                    <label for=""> URL: </label>
+                    <input type="url" size="25"> <br> <br>
+
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
+
+            <br>
+
+            <form action="">
+                <label for=""> RADIOBUTTONS </label> <br>
+                <input type="radio" name="fablang" id="java" value="Java">
+                <label for="java"> Java </label> <br>
+                <input type="radio" name="fablang" id="py" value="Python">
+                <label for="py"> Python</label> <br>
+                <input type="radio" name="fablang" id="cs" value="C-sharp">
+                <label for="cs"> C-Sharp </label>
+                <input type="submit" value="Submit">
+            </form>
+
+            <br>
+
+            <form action="">
+                <label for=""> CHECKBOX</label> <br>
+                <input type="checkbox" id="phone" name="op1" value="Celular">
+                <label for="phone"> Celular </label> <br>
+                <input type="checkbox" id="screen" name="op2" value="Monitor">
+                <label for="screen"> Monitor </label> <br>
+                <input type="checkbox" id="mic" name="op3" value="Auriculares">
+                <label for="mic"> Auriculares </label>
+                <input type="submit" value="Submit">
+            </form>
+            
+            <br>
+            
+            <form action="">
+                <label for=""> SELECT (option) </label> &nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="autos" id="cars"> <!-- size, multiple -->
+                    <option value="hrv" selected> HRV </option>
+                    <option value="civic"> Civic </option>
+                    <option value="fiesta"> Ford Fiesta </option>
+                    <option value="a5"> Audi A5 </option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+
+            <br>
+
+            <form action="">
+                <label for=""> TEXTAREA </label> <br>
+                <textarea name="doc" id="" cols="30" rows="10" disabled
+                >Hello</textarea>
+                <input type="submit" value="Submit">
+            </form>
+
+            <br>
+
+            <form action="">
+                <label for=""> HIDDEN: ??? </label>
+                <input type="hidden"> <br> <br>
+                <label for=""> RANGE: </label>
+                <input type="range"> <br> <br>
+                <label for=""> COLOR: </label> &nbsp;&nbsp;&nbsp;
+                <input type="color"> <br> <br>
+                <label for=""> IMAGE: </label> <br>
+                <input type="image" src="../imgmatrix.jpg" alt="submit" width="250" height="100">
+                <br> <br>
+                <label for=""> FILE: </label>
+                <input type="file">
+            </form>
+        </p>
+    </body>
+</html>
